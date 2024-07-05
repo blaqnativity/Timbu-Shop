@@ -1,243 +1,282 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductsList = () => {
   return (
-    <div class="bg-white">
-      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-          Customers also purchased
+    <div className="bg-gray-100">
+      <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
+          Premium Sneakers
         </h2>
 
-        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product9.webp"
+                alt="Product 1"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Sole Elegance
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$10</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product10.webp"
+                alt="Product 2"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Urban Sneakers
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$12</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product11.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Velvet Boots
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product12.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Summit Hiking
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$12</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product13.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Zenith Glow
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$15</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product14.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Echo Elegance
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product15.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">Pumps</h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
             </div>
           </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+
+          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16px"
+                className="fill-gray-800 inline-block"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
+                  data-original="#000000"
+                ></path>
+              </svg>
+            </div>
+
+            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="https://readymadeui.com/images/product10.webp"
+                alt="Product 3"
+                className="h-full w-full object-contain"
               />
             </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-              />
-            </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-              />
-            </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
-          <div class="group relative">
-            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-              />
-            </div>
-            <div class="mt-4 flex justify-between">
-              <div>
-                <h3 class="text-sm text-gray-700">
-                  <a href="#">
-                    <span aria-hidden="true" class="absolute inset-0"></span>
-                    Basic Tee
-                  </a>
-                </h3>
-                <p class="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p class="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 className="text-lg font-extrabold text-gray-800">
+                Blaze Burst
+              </h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
             </div>
           </div>
         </div>

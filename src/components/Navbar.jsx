@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <header className="text-gray-600 body-font">
@@ -26,9 +27,13 @@ const Navbar = () => {
             Products
           </Link>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <Link
+          to="/checkout"
+          className="text-white inline-flex items-center bg-indigo-500 border-0 py-2 px-4 font-semibold focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0 gap-2"
+        >
+          <FaCartShopping />
           Your Cart
-        </button>
+        </Link>
       </div>
     </header>
   );
