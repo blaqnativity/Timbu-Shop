@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
-import CartPage from "./pages/CartPage";
+import CartPage from "./pages/Checkout";
 import SingleProduct from "./pages/SingleProduct";
 
 const App = () => {
