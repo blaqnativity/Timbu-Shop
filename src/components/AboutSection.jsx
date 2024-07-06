@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import heroMainImage from "/images/about-bg.png";
 
 const AboutSection = () => {
   return (
     <section class="md:h-[80vh] w-full my-40">
-      <div class="relative bg-[url('./images/about-bg.png')] h-full w-[80%] rounded-3xl mx-auto bg-cover bg-center">
+      <div
+        class="relative h-full w-[80%] rounded-3xl mx-auto bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroMainImage})` }}
+      >
         {/* boxed content goes in here in absolute */}
         <div className="md:absolute bottom-10 left-10 bg-[#121211] md:w-[30%] rounded-3xl text-white p-6 grid gap-2">
           <h1 className="text-2xl font-bold">About Furni</h1>
