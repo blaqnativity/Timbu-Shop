@@ -2,15 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCartShopping } from "react-icons/fa6";
 
-// const links = [
-//   { id: 1, label: "Collections", link: "/shop" },
-//   ,
-//   { id: 2, label: "Clearance", link: "/shop" },
-//   ,
-//   { id: 3, label: "About", link: "#" },
-//   ,
-// ];
-
 const Hero = () => {
   return (
     <div class="relative h-screen text-white overflow-hidden">
