@@ -5,38 +5,7 @@ import { FaCartShopping } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div class="relative h-screen text-white overflow-hidden">
-      <header className="text-white absolute top-0 z-50 inset-0">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between p-5 flex-col md:flex-row items-center">
-          <div className="flex flex-wrap items-end gap-8 text-lg">
-            <div className="logo">
-              <Link
-                to="/"
-                className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-              >
-                <img src="./images/Logo.png" alt="" />
-              </Link>
-            </div>
-            <Link to="/shop" className="mr-5 hover:text-[whitesmoke]">
-              Collections
-            </Link>
-            <Link to="#" className="mr-5 hover:text-[whitesmoke]">
-              Clearance
-            </Link>
-            <Link to="#" className="mr-5 hover:text-[whitesmoke]">
-              About
-            </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <Link to="/checkout" className="text-white font-semibold text-lg">
-              <FaCartShopping />
-            </Link>
-            <Link to="/" className="text-white font-semibold text-base">
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* header menu */}
       <div class="absolute inset-0">
         <img
           src="./images/hero-main.png"
