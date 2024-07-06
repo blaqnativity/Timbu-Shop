@@ -94,8 +94,8 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute z-10 flex flex-col justify-end items-start bottom-10 md:pl-10 md:ml-40 p-10">
-        <h1 className="text-5xl font-bold leading-tight mb-4 w-3/5">
-          Welcome to Timbu Shopper Crafting
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4 md:w-3/5">
+          Crafting Your Perfect Haven
         </h1>
         <p className="text-lg text-gray-300 mb-8"></p>
       </div>

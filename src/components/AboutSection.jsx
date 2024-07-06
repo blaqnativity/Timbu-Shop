@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroMainImage from "/images/about-bg.png";
+import aboutMain from "/images/about-bg.png";
 
 const AboutSection = () => {
   return (
-    <section class="md:h-[80vh] w-full my-40">
+    <section className="md:h-[80vh] w-full my-40">
       <div
-        class="relative h-full w-[80%] rounded-3xl mx-auto bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroMainImage})` }}
+        className="relative h-full w-[90%] md:w-[80%] rounded-3xl mx-auto bg-cover bg-center"
+        style={{ backgroundImage: `url(${aboutMain})` }}
       >
         {/* boxed content goes in here in absolute */}
-        <div className="md:absolute bottom-10 left-10 bg-[#121211] md:w-[30%] rounded-3xl text-white p-6 grid gap-2">
-          <h1 className="text-2xl font-bold">About Furni</h1>
-          <p className="text-sm">
+        <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-auto bg-[#121211] w-full md:w-[30%] rounded-3xl text-white p-6 grid gap-4">
+          <h1 className="text-2xl md:text-4xl font-bold">About Furni</h1>
+          <p className="text-sm md:text-base">
             Furni redefines modern living through minimalist furniture design.
             Our collection celebrates simplicity with clean lines, premium
             natural materials, and thoughtful craftsmanship that strips away the
