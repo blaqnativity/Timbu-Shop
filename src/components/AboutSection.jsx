@@ -4,13 +4,13 @@ import aboutMain from "/images/about-bg.png";
 
 const AboutSection = () => {
   return (
-    <section className="md:h-[80vh] w-full my-40">
+    <section className="h-screen md:h-[80vh] w-full my-40">
       <div
-        className="relative h-full w-[90%] md:w-[80%] rounded-3xl mx-auto bg-cover bg-center"
+        className="relative h-full w-full md:w-[80%] rounded-3xl mx-auto bg-cover bg-center"
         style={{ backgroundImage: `url(${aboutMain})` }}
       >
         {/* boxed content goes in here in absolute */}
-        <div className="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-auto bg-[#121211] w-full md:w-[30%] rounded-3xl text-white p-6 grid gap-4">
+        <div className="absolute bottom-20 left-0 right-4 md:bottom-10 md:left-10 md:right-auto bg-[#121211] w-full md:w-[30%] rounded-3xl text-white p-6 grid gap-4">
           <h1 className="text-2xl md:text-4xl font-bold">About Furni</h1>
           <p className="text-sm md:text-base">
             Furni redefines modern living through minimalist furniture design.
