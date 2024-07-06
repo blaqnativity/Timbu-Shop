@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const ProductsList = () => {
   return (
-    <div className="bg-gray-100">
-      <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
+    <div className="bg-gray-100 my-20">
+      <div className="px-4 py-10 mx-auto lg:max-w-7xl sm:max-w-full">
         <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
           Premium Sneakers
         </h2>

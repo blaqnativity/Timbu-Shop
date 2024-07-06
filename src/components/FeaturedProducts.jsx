@@ -1,109 +1,80 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const products = [];
+
 const FeaturedProducts = () => {
   return (
-    <div class="bg-white">
-      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-          Customers also purchased
-        </h2>
+    <div class="font-[sans-serif] my-20">
+      <div class="px-4 py-10 mx-auto lg:max-w-7xl sm:max-w-full">
+        <div className="flex flex-wrap gap-6 items-center justify-between">
+          <h2 class="md:w-1/2 text-4xl font-extrabold text-gray-800 mb-12">
+            Discover Unparalleled Furniture Designs
+          </h2>
 
-        <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+          <div className="buttons flex gap-6 items-center">
+            <Link className="py-2 px-5 rounded-full bg-black text-white text-sm">
+              All Products
+            </Link>
+            <Link className="py-2 px-5 rounded-full bg-black text-white text-sm">
+              Living Room
+            </Link>
+            <Link className="py-2 px-5 rounded-full bg-black text-white text-sm">
+              Bed Room
+            </Link>
+            <Link className="py-2 px-5 rounded-full bg-black text-white text-sm">
+              Outdooor
+            </Link>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-xl:gap-4 gap-6">
+          <div class=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div class="w-full h-full overflow-hidden mx-auto">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="./images/thumbnail-1.png"
+                alt="Product 1"
+                class="h-full w-full object-contain"
               />
             </div>
-            <div className="mt-4 flex justify-between">
-              <div>
-                <h3 className="text-sm text-gray-700">
-                  <Link to="/singleProduct">
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-0"
-                    ></span>
-                    Basic Tee
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p className="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 class="text-lg font-extrabold text-gray-800">
+                Sole Elegance
+              </h3>
+              <h4 class="text-lg text-red-500 font-bold mt-1">$10</h4>
             </div>
           </div>
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+          <div class=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div class="w-full h-full overflow-hidden mx-auto">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="./images/thumbnail-2.png"
+                alt="Product 1"
+                class="h-full w-full object-contain"
               />
             </div>
-            <div className="mt-4 flex justify-between">
-              <div>
-                <h3 className="text-sm text-gray-700">
-                  <Link to="/singleProduct">
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-0"
-                    ></span>
-                    Basic Tee
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p className="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 class="text-lg font-extrabold text-gray-800">
+                Sole Elegance
+              </h3>
+              <h4 class="text-lg text-red-500 font-bold mt-1">$10</h4>
             </div>
           </div>
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+          <div class=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
+            <div class="w-full h-full overflow-hidden mx-auto">
               <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                src="./images/thumbnail-3.png"
+                alt="Product 1"
+                class="h-full w-full object-contain"
               />
             </div>
-            <div className="mt-4 flex justify-between">
-              <div>
-                <h3 className="text-sm text-gray-700">
-                  <Link to="/singleProduct">
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-0"
-                    ></span>
-                    Basic Tee
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p className="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
-          <div className="group relative">
-            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
-                alt="Front of men&#039;s Basic Tee in black."
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-              />
-            </div>
-            <div className="mt-4 flex justify-between">
-              <div>
-                <h3 className="text-sm text-gray-700">
-                  <Link to="/singleProduct">
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-0"
-                    ></span>
-                    Basic Tee
-                  </Link>
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">Black</p>
-              </div>
-              <p className="text-sm font-medium text-gray-900">$35</p>
+
+            <div>
+              <h3 class="text-lg font-extrabold text-gray-800">
+                Sole Elegance
+              </h3>
+              <h4 class="text-lg text-red-500 font-bold mt-1">$10</h4>
             </div>
           </div>
         </div>
