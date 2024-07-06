@@ -1,97 +1,89 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const products = [];
-
 const FeaturedProducts = () => {
   return (
-    <div className="font-[sans-serif] my-20">
-      <div className="px-4 py-10 mx-auto lg:max-w-7xl sm:max-w-full">
-        <div className="flex flex-wrap gap-6 items-center justify-between">
-          <h2 className="md:w-1/2 text-4xl font-extrabold text-gray-800 mb-12">
+    <section className="mt-20">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <header>
+          <h2 className="w-2/5 text-xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
             Discover Unparalleled Furniture Designs
           </h2>
+        </header>
 
-          <div className="buttons flex gap-6 items-center">
-            <Link
-              to="#"
-              className="py-2 px-5 rounded-full bg-black text-white text-sm"
-            >
-              All Products
-            </Link>
-            <Link
-              to="#"
-              className="py-2 px-5 rounded-full bg-black text-white text-sm"
-            >
-              Living Room
-            </Link>
-            <Link
-              to="#"
-              className="py-2 px-5 rounded-full bg-black text-white text-sm"
-            >
-              Bed Room
-            </Link>
-            <Link
-              to="#"
-              className="py-2 px-5 rounded-full bg-black text-white text-sm"
-            >
-              Outdooor
-            </Link>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-xl:gap-4 gap-6">
-          <div className=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="w-full h-full overflow-hidden mx-auto">
+        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <Link to="/singleProduct" className="group block overflow-hidden">
               <img
-                src="./images/thumbnail-1.png"
-                alt="Product 1"
-                className="h-full w-full object-contain"
+                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                alt=""
+                className="h-[350px] w-full object-cover rounded-2xl transition duration-500 group-hover:scale-105 sm:h-[450px]"
               />
-            </div>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Sole Elegance
-              </h3>
-              <h4 className="text-lg text-red-500 font-bold mt-1">$10</h4>
-            </div>
-          </div>
-          <div className=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="w-full h-full overflow-hidden mx-auto">
+              <div className="relative pt-3">
+                <h3 className="text-xl text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                  Basic Tee
+                </h3>
+
+                <p className="mt-2">
+                  <span className="sr-only"> Regular Price </span>
+
+                  <span className="tracking-wider font-semibold text-red-500">
+                    $200
+                  </span>
+                </p>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/singleProduct" className="group block overflow-hidden">
               <img
-                src="./images/thumbnail-2.png"
-                alt="Product 1"
-                className="h-full w-full object-contain"
+                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                alt=""
+                className="h-[350px] w-full object-cover rounded-2xl transition duration-500 group-hover:scale-105 sm:h-[450px]"
               />
-            </div>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Sole Elegance
-              </h3>
-              <h4 className="text-lg text-red-500 font-bold mt-1">$10</h4>
-            </div>
-          </div>
-          <div className=" rounded-2xl cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="w-full h-full overflow-hidden mx-auto">
+              <div className="relative pt-3">
+                <h3 className="text-xl text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                  Basic Tee
+                </h3>
+
+                <p className="mt-2">
+                  <span className="sr-only"> Regular Price </span>
+
+                  <span className="tracking-wider font-semibold text-red-500">
+                    $200
+                  </span>
+                </p>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/singleProduct" className="group block overflow-hidden">
               <img
-                src="./images/thumbnail-3.png"
-                alt="Product 1"
-                className="h-full w-full object-contain"
+                src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                alt=""
+                className="h-[350px] w-full object-cover rounded-2xl transition duration-500 group-hover:scale-105 sm:h-[450px]"
               />
-            </div>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Sole Elegance
-              </h3>
-              <h4 className="text-lg text-red-500 font-bold mt-1">$10</h4>
-            </div>
-          </div>
-        </div>
+              <div className="relative pt-3">
+                <h3 className="text-xl text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                  Basic Tee
+                </h3>
+
+                <p className="mt-2">
+                  <span className="sr-only"> Regular Price </span>
+
+                  <span className="tracking-wider font-semibold text-red-500">
+                    $200
+                  </span>
+                </p>
+              </div>
+            </Link>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

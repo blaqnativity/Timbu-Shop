@@ -3,285 +3,483 @@ import { Link } from "react-router-dom";
 
 const ProductsList = () => {
   return (
-    <div className="bg-gray-100 my-20">
-      <div className="px-4 py-10 mx-auto lg:max-w-7xl sm:max-w-full">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
-          Premium Sneakers
-        </h2>
+    <>
+      {/*
+  Heads up! 👋
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-xl:gap-4 gap-6">
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+
+  Plugins:
+    - @tailwindcss/forms
+*/}
+
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header>
+            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
+              Product Collection
+            </h2>
+
+            <p className="mt-4 max-w-md text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+              praesentium cumque iure dicta incidunt est ipsam, officia dolor
+              fugit natus?
+            </p>
+          </header>
+
+          <div className="mt-8 block lg:hidden">
+            <button className="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
+              <span className="text-sm font-medium"> Filters & Sorting </span>
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-4 rtl:rotate-180"
               >
                 <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
               </svg>
-            </div>
-
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product9.webp"
-                alt="Product 1"
-                className="h-full w-full object-contain"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Sole Elegance
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$10</h4>
-            </div>
+            </button>
           </div>
 
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
+          <div className="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
+            <div className="hidden space-y-4 lg:block">
+              <div>
+                <label
+                  htmlFor="SortBy"
+                  className="block text-xs font-medium text-gray-700"
+                >
+                  {" "}
+                  Sort By{" "}
+                </label>
+
+                <select
+                  id="SortBy"
+                  className="mt-1 rounded border-gray-300 text-sm"
+                >
+                  <option>Sort By</option>
+                  <option value="Title, DESC">Title, DESC</option>
+                  <option value="Title, ASC">Title, ASC</option>
+                  <option value="Price, DESC">Price, DESC</option>
+                  <option value="Price, ASC">Price, ASC</option>
+                </select>
+              </div>
+
+              <div>
+                <p className="block text-xs font-medium text-gray-700">
+                  Filters
+                </p>
+
+                <div className="mt-1 space-y-2">
+                  <details className="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition">
+                      <span className="text-sm font-medium">
+                        {" "}
+                        Availability{" "}
+                      </span>
+
+                      <span className="transition group-open:-rotate-180">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="h-4 w-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+
+                    <div className="border-t border-gray-200 bg-white">
+                      <header className="flex items-center justify-between p-4">
+                        <span className="text-sm text-gray-700">
+                          {" "}
+                          0 Selected{" "}
+                        </span>
+
+                        <button
+                          type="button"
+                          className="text-sm text-gray-900 underline underline-offset-4"
+                        >
+                          Reset
+                        </button>
+                      </header>
+
+                      <ul className="space-y-1 border-t border-gray-200 p-4">
+                        <li>
+                          <label
+                            htmlFor="FilterInStock"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterInStock"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              In Stock (5+){" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterPreOrder"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterPreOrder"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Pre Order (3+){" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterOutOfStock"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterOutOfStock"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Out of Stock (10+){" "}
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+
+                  <details className="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition">
+                      <span className="text-sm font-medium"> Price </span>
+
+                      <span className="transition group-open:-rotate-180">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="h-4 w-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+
+                    <div className="border-t border-gray-200 bg-white">
+                      <header className="flex items-center justify-between p-4">
+                        <span className="text-sm text-gray-700">
+                          {" "}
+                          The highest price is $600{" "}
+                        </span>
+
+                        <button
+                          type="button"
+                          className="text-sm text-gray-900 underline underline-offset-4"
+                        >
+                          Reset
+                        </button>
+                      </header>
+
+                      <div className="border-t border-gray-200 p-4">
+                        <div className="flex justify-between gap-4">
+                          <label
+                            htmlFor="FilterPriceFrom"
+                            className="flex items-center gap-2"
+                          >
+                            <span className="text-sm text-gray-600">$</span>
+
+                            <input
+                              type="number"
+                              id="FilterPriceFrom"
+                              placeholder="From"
+                              className="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                            />
+                          </label>
+
+                          <label
+                            htmlFor="FilterPriceTo"
+                            className="flex items-center gap-2"
+                          >
+                            <span className="text-sm text-gray-600">$</span>
+
+                            <input
+                              type="number"
+                              id="FilterPriceTo"
+                              placeholder="To"
+                              className="w-full rounded-md border-gray-200 shadow-sm sm:text-sm"
+                            />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+
+                  <details className="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer items-center justify-between gap-2 p-4 text-gray-900 transition">
+                      <span className="text-sm font-medium"> Colors </span>
+
+                      <span className="transition group-open:-rotate-180">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="h-4 w-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </span>
+                    </summary>
+
+                    <div className="border-t border-gray-200 bg-white">
+                      <header className="flex items-center justify-between p-4">
+                        <span className="text-sm text-gray-700">
+                          {" "}
+                          0 Selected{" "}
+                        </span>
+
+                        <button
+                          type="button"
+                          className="text-sm text-gray-900 underline underline-offset-4"
+                        >
+                          Reset
+                        </button>
+                      </header>
+
+                      <ul className="space-y-1 border-t border-gray-200 p-4">
+                        <li>
+                          <label
+                            htmlFor="FilterRed"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterRed"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Red{" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterBlue"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterBlue"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Blue{" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterGreen"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterGreen"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Green{" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterOrange"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterOrange"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Orange{" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterPurple"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterPurple"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Purple{" "}
+                            </span>
+                          </label>
+                        </li>
+
+                        <li>
+                          <label
+                            htmlFor="FilterTeal"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <input
+                              type="checkbox"
+                              id="FilterTeal"
+                              className="size-5 rounded border-gray-300"
+                            />
+
+                            <span className="text-sm font-medium text-gray-700">
+                              {" "}
+                              Teal{" "}
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </details>
+                </div>
+              </div>
             </div>
 
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product10.webp"
-                alt="Product 2"
-                className="h-full w-full object-contain"
-              />
-            </div>
+            <div className="lg:col-span-3">
+              <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <li>
+                  <a href="#" className="group block overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                      alt=""
+                      className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                    />
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Urban Sneakers
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$12</h4>
-            </div>
-          </div>
+                    <div className="relative bg-white pt-3">
+                      <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                        Basic Tee
+                      </h3>
 
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
+                      <p className="mt-2">
+                        <span className="sr-only"> Regular Price </span>
 
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product11.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
+                        <span className="tracking-wider text-gray-900">
+                          {" "}
+                          £24.00 GBP{" "}
+                        </span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Velvet Boots
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
-            </div>
-          </div>
+                <li>
+                  <a href="#" className="group block overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                      alt=""
+                      className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                    />
 
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
+                    <div className="relative bg-white pt-3">
+                      <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                        Basic Tee
+                      </h3>
 
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product12.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
+                      <p className="mt-2">
+                        <span className="sr-only"> Regular Price </span>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Summit Hiking
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$12</h4>
-            </div>
-          </div>
+                        <span className="tracking-wider text-gray-900">
+                          {" "}
+                          £24.00 GBP{" "}
+                        </span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
 
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
+                <li>
+                  <a href="#" className="group block overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                      alt=""
+                      className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                    />
 
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product13.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
+                    <div className="relative bg-white pt-3">
+                      <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                        Basic Tee
+                      </h3>
 
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Zenith Glow
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$15</h4>
-            </div>
-          </div>
+                      <p className="mt-2">
+                        <span className="sr-only"> Regular Price </span>
 
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
-
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product14.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Echo Elegance
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
-
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product15.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">Pumps</h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-5 cursor-pointer hover:-translate-y-2 transition-all relative">
-            <div className="bg-gray-100 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer absolute top-4 right-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16px"
-                className="fill-gray-800 inline-block"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </div>
-
-            <div className="w-5/6 h-[210px] overflow-hidden mx-auto aspect-w-16 aspect-h-8 md:mb-2 mb-4">
-              <img
-                src="https://readymadeui.com/images/product10.webp"
-                alt="Product 3"
-                className="h-full w-full object-contain"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-extrabold text-gray-800">
-                Blaze Burst
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <h4 className="text-lg text-gray-800 font-bold mt-4">$14</h4>
+                        <span className="tracking-wider text-gray-900">
+                          {" "}
+                          £24.00 GBP{" "}
+                        </span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 
