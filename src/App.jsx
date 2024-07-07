@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
 import CartPage from "./pages/Checkout";
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
             <Route path="products" element={<ShopsPage />} />
             <Route path="/products/id" element={<SingleProduct />} />

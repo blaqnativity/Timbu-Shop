@@ -1,7 +1,7 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import FooterNav from "../components/FooterNav";
 
-const Layout = () => {
+const MainLayout = () => {
   return (
     <>
       <Outlet />
@@ -11,4 +11,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default MainLayout;
