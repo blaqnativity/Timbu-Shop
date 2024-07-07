@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
 import CartPage from "./pages/Checkout";
 import SingleProduct from "./pages/SingleProduct";
+import Checkout from "./pages/Checkout";
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path="shop" element={<ShopsPage />} />
-            <Route path="singleProduct" element={<SingleProduct />} />
-            <Route path="checkout" element={<CartPage />} />
+            <Route path="products" element={<ShopsPage />} />
+            <Route path="/products/id" element={<SingleProduct />} />
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="cart" element={<CartPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

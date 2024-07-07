@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Sofa",
+    "description": "A stylish and comfortable modern sofa, perfect for any living room.",
+    "price": 799.99,
+    "imageUrl": "/images/thumbnail-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Wooden Dining Table",
+    "description": "A classic wooden dining table that seats six people comfortably.",
+    "price": 599.99,
+    "imageUrl": "/images/thumbnail-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Ergonomic Office Chair",
+    "description": "An ergonomic office chair with adjustable height and lumbar support.",
+    "price": 249.99,
+    "imageUrl": "/images/thumbnail-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Queen Size Bed Frame",
+    "description": "A sturdy queen size bed frame made of solid wood.",
+    "price": 399.99,
+    "imageUrl": "/images/thumbnail-4.png"
+  },
+  {
+    "id": 5,
+    "title": "Glass Coffee Table",
+    "description": "A sleek glass coffee table with a minimalist design.",
+    "price": 199.99,
+    "imageUrl": "/images/thumbnail-5.png"
+  },
+  {
+    "id": 6,
+    "title": "Recliner Chair",
+    "description": "A comfortable recliner chair with adjustable reclining positions.",
+    "price": 349.99,
+    "imageUrl": "/images/thumbnail-6.png"
+  },
+  {
+    "id": 7,
+    "title": "Bookshelf",
+    "description": "A spacious bookshelf with multiple shelves for storage.",
+    "price": 129.99,
+    "imageUrl": "/images/thumbnail-7.png"
+  },
+  {
+    "id": 8,
+    "title": "Outdoor Patio Set",
+    "description": "A durable outdoor patio set with a table and four chairs.",
+    "price": 499.99,
+    "imageUrl": "/images/thumbnail-8.png"
+  },
+  {
+    "id": 9,
+    "title": "Kitchen Island",
+    "description": "A versatile kitchen island with storage drawers and a countertop.",
+    "price": 599.99,
+    "imageUrl": "/images/thumbnail-9.png"
+  }
+]
