@@ -7,7 +7,7 @@ const HeroSection = ({
   return (
     <section className="h-[60vh] w-full my-20">
       <div
-        className="relative h-full max-w-7xl rounded-3xl mx-auto bg-cover bg-center"
+        className="relative h-full w-full md:max-w-7xl md:rounded-3xl mx-auto bg-cover bg-center"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50 rounded-3xl"></div>
