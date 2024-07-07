@@ -5,7 +5,7 @@ const HeroSection = ({
   imageUrl = "./images/about-bg.png",
 }) => {
   return (
-    <section className="h-1/2 md:h-[60vh] w-full my-20">
+    <section className="h-[60vh] w-full my-20">
       <div
         className="relative h-full max-w-7xl rounded-3xl mx-auto bg-cover bg-center"
         style={{ backgroundImage: `url(${imageUrl})` }}
