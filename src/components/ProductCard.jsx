@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowLeft, FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import {
+  FaArrowLeft,
+  FaAngleDown,
+  FaAngleUp,
+  FaAngleLeft,
+  FaAngleRight,
+} from "react-icons/fa6";
 const ProductCard = () => {
   return (
     <>
@@ -74,27 +80,38 @@ const ProductCard = () => {
                 className="md:h-[600px] w-full object-cover object-center rounded-2xl"
               />
             </div>
-            <div className="flex items-center gap-4">
-              <img
-                src="/images/productImage.jpg"
-                alt="small-img"
-                className="h-[70px] w-[80px] rounded-lg"
-              />
-              <img
-                src="/images/productImage.jpg"
-                alt="small-img"
-                className="h-[70px] w-[80px] rounded-lg"
-              />
-              <img
-                src="/images/productImage.jpg"
-                alt="small-img"
-                className="h-[70px] w-[80px] rounded-lg"
-              />
-              <img
-                src="/images/productImage.jpg"
-                alt="small-img"
-                className="h-[70px] w-[80px] rounded-lg"
-              />
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/productImage.jpg"
+                  alt="small-img"
+                  className="h-[70px] w-[80px] rounded-lg border-2 border-gray-500"
+                />
+                <img
+                  src="/images/productImage.jpg"
+                  alt="small-img"
+                  className="h-[70px] w-[80px] rounded-lg"
+                />
+                <img
+                  src="/images/productImage.jpg"
+                  alt="small-img"
+                  className="h-[70px] w-[80px] rounded-lg"
+                />
+                <img
+                  src="/images/productImage.jpg"
+                  alt="small-img"
+                  className="h-[70px] w-[80px] rounded-lg"
+                />
+              </div>
+
+              <div className="flex items-center gap-4">
+                <button className="p-3 rounded-full border-2">
+                  <FaAngleLeft />
+                </button>
+                <button className="p-3 rounded-full border-2">
+                  <FaAngleRight />
+                </button>
+              </div>
             </div>
           </div>
         </div>

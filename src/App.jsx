@@ -3,7 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 // import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
-import CartPage from "./pages/Checkout";
+import CartPage from "./pages/CartPage";
 import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
@@ -17,7 +17,7 @@ const App = () => {
             <Route index element={<HomePage />} />
             <Route path="products" element={<ShopsPage />} />
             <Route path="/products/:id" element={<ProductPage />} />
-            <Route path="checkout" element={<Checkout />} />
+            <Route path="/products/checkout" element={<Checkout />} />
             <Route path="/products/cart/" element={<CartPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
