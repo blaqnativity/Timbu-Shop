@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaArrowLeft, FaArrowDown, FaArrowUp } from "react-icons/fa6";
+import { FaArrowLeft, FaAngleDown, FaAngleUp } from "react-icons/fa6";
 const ProductCard = () => {
   return (
     <>
       <section>
-        <div className="py-24 max-w-7xl mx-auto p-4 grid grid-cols-1 gap-8 md:grid-cols-7">
+        <div className="py-24 max-w-7xl mx-auto p-4 grid grid-cols-1 gap-8 md:grid-cols-7 justify-start">
           {/* content div */}
           <div className="grid gap-6 col-span-3">
             <Link
-              to="`/products/${product.id}`"
+              to="/products"
               className="flex items-center gap-2 font-semibold"
             >
               <FaArrowLeft />
@@ -49,23 +49,53 @@ const ProductCard = () => {
               <button className="flex items-center gap-2 bg-gray-300 py-2 px-5 rounded-full border-2 border-gray-700">
                 <span>1</span>
                 <div>
-                  <FaArrowUp />
-                  <FaArrowDown />
+                  <FaAngleUp />
+                  <FaAngleDown />
                 </div>
               </button>
             </div>
 
-            <Link
-              to="/cart"
-              className="bg-[#121211] w-fit text-white font-semibold py-2 px-5 rounded-full"
-            >
-              Add to Cart
-            </Link>
+            <div className="mt-2">
+              <Link
+                to={`/products/cart`}
+                className="bg-[#121211] w-fit text-white font-semibold py-3 px-5 rounded-full"
+              >
+                Add to Cart
+              </Link>
+            </div>
           </div>
 
           {/* image div */}
-          <div className="col-span-4">
-            <img src="/images/thumbnail-5.png" alt="dining-img" />
+          <div className="col-span-4 grid grid-cols-1 justify-start gap-6">
+            <div>
+              <img
+                src="/images/productImage.jpg"
+                alt="dining-img"
+                className="md:h-[600px] w-full object-cover object-center rounded-2xl"
+              />
+            </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/productImage.jpg"
+                alt="small-img"
+                className="h-[70px] w-[80px] rounded-lg"
+              />
+              <img
+                src="/images/productImage.jpg"
+                alt="small-img"
+                className="h-[70px] w-[80px] rounded-lg"
+              />
+              <img
+                src="/images/productImage.jpg"
+                alt="small-img"
+                className="h-[70px] w-[80px] rounded-lg"
+              />
+              <img
+                src="/images/productImage.jpg"
+                alt="small-img"
+                className="h-[70px] w-[80px] rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
