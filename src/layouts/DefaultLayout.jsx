@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import FooterNav from "../components/FooterNav";
 
-const MainLayout = () => {
+const DefaultLayout = () => {
   return (
     <>
+      <Navbar />
       <Outlet />
       <FooterNav />
     </>
   );
 };
 
-export default MainLayout;
+export default DefaultLayout;

@@ -5,7 +5,7 @@ const ProductList = ({ product }) => {
   return (
     <li>
       <Link
-        to={`/products/${product.index}`}
+        to={`/products/${product.id}`}
         className="group block overflow-hidden"
       >
         <img
