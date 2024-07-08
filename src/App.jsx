@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import DefaultLayout from "./layouts/DefaultLayout"; // Make sure this is uncommented
+import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
 import CartPage from "./pages/CartPage";
