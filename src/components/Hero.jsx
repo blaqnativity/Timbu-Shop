@@ -38,7 +38,7 @@ const Hero = () => {
             <Link to="/cart" className="text-white hover:text-gray-300">
               <FaCartShopping />
             </Link>
-            <Link to="/en" className="text-white hover:text-gray-300">
+            <Link to="#" className="text-white hover:text-gray-300">
               EN
             </Link>
             <Link to="/contact" className="text-white hover:text-gray-300">
