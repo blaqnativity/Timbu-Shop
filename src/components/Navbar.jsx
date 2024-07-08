@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-gray-900 text-white">
+    <header className=" text-[#121211]">
       <div className="mx-auto max-w-7xl flex items-center justify-between p-5">
         <div className="flex items-center gap-20">
           <div className="text-2xl font-bold">
             <Link to="/">
               <img
-                src="./images/Logo.png"
+                src="./images/logoBlack.png"
                 alt="Timbu Shopper Logo"
                 className="h-8"
               />
