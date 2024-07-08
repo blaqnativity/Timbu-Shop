@@ -61,5 +61,47 @@
     "description": "A versatile kitchen island with storage drawers and a countertop.",
     "price": 599.99,
     "imageUrl": "/images/thumbnail-9.png"
+  },
+  {
+    "id": 10,
+    "title": "Bookshelf",
+    "description": "A spacious bookshelf with multiple shelves for storage.",
+    "price": 129.99,
+    "imageUrl": "/images/thumbnail-7.png"
+  },
+  {
+    "id": 11,
+    "title": "Outdoor Patio Set",
+    "description": "A durable outdoor patio set with a table and four chairs.",
+    "price": 499.99,
+    "imageUrl": "/images/thumbnail-8.png"
+  },
+  {
+    "id": 12,
+    "title": "Kitchen Island",
+    "description": "A versatile kitchen island with storage drawers and a countertop.",
+    "price": 599.99,
+    "imageUrl": "/images/thumbnail-9.png"
+  },
+  {
+    "id": 13,
+    "title": "Bookshelf",
+    "description": "A spacious bookshelf with multiple shelves for storage.",
+    "price": 129.99,
+    "imageUrl": "/images/thumbnail-7.png"
+  },
+  {
+    "id": 14,
+    "title": "Outdoor Patio Set",
+    "description": "A durable outdoor patio set with a table and four chairs.",
+    "price": 499.99,
+    "imageUrl": "/images/thumbnail-8.png"
+  },
+  {
+    "id": 15,
+    "title": "Kitchen Island",
+    "description": "A versatile kitchen island with storage drawers and a countertop.",
+    "price": 599.99,
+    "imageUrl": "/images/thumbnail-9.png"
   }
 ]

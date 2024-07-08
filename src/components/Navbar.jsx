@@ -61,9 +61,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         id="nav-menu"
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } md:hidden bg-black bg-opacity-75`}
+        className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-opacity-75`}
       >
         <div className="flex flex-col items-center space-y-6 py-6">
           <Link to="/collections" className="hover:text-gray-300">

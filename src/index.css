@@ -5,3 +5,7 @@
 body {
   background-color: #f3f2e8;
 }
+
+input {
+  @apply bg-[#12121126] text-gray-900 w-full rounded-full p-3;
+}

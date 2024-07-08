@@ -20,7 +20,7 @@ const AboutSection = () => {
             elegance in versatile pieces made to elevate any interior space.
           </p>
           <Link
-            to="#"
+            to="/contact"
             className="w-fit bg-[#F3F2E8] rounded-full py-2 px-5 text-[#121211] font-semibold"
           >
             Contact Us
