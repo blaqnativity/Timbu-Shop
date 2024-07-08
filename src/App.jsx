@@ -26,7 +26,7 @@ const App = () => {
   if (loading) {
     return (
       <div
-        className="flex h-screen w-screen bg-cover bg-center"
+        className="flex h-[100vh] w-[100vw] bg-cover bg-center object-fit"
         style={{
           backgroundImage: `url(${Preloader})`,
           backgroundRepeat: "no-repeat",

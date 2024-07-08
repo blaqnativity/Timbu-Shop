@@ -13,7 +13,8 @@ const FilterNav = () => {
       : "hover:text-gray-300";
 
   return (
-    <div className="grid grid-cols-1 gap-4">
+    <>
+      {" "}
       <button
         className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
           "Date"
@@ -92,7 +93,7 @@ const FilterNav = () => {
         />
         <span>Dresser</span>
       </button>
-    </div>
+    </>
   );
 };
 

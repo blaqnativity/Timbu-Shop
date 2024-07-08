@@ -34,7 +34,7 @@ const ProductCard = () => {
               summer sky.
             </p>
 
-            <div className="colorPicker flex gap-2 items-center">
+            <div className="colorPicker flex gap-2 items-center flex-wrap">
               <span className="text-lg font-semibold">Color:</span>
               <button className="bg-[#C66E4E] py-2 px-5 rounded-full border-2 border-gray-700 text-white">
                 Terracotta

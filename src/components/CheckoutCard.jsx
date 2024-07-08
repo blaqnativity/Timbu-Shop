@@ -5,7 +5,7 @@ const CheckoutCard = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-7 mx-auto max-w-7xl gap-8">
       {/* details div */}
-      <div className="relative col-span-4 h-20 p-4 ">
+      <div className="relative col-span-4 p-4 ">
         <div className="flex items-center gap-10 md:gap-30 justify-start">
           <div className="cursor-pointer">
             <span className="text-md font-semibold text-[#121211]">
@@ -43,7 +43,7 @@ const CheckoutCard = () => {
       </div>
 
       {/* cart summary div */}
-      <div className="relative col-span-3 max-md:max-w-xl mx-auto p-8">
+      <div className="col-span-3 max-md:max-w-xl mx-auto p-8">
         <div className="flex justify-start">
           <div>
             <span className="text-lg font-semibold text-[#121211]">

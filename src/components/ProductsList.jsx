@@ -19,12 +19,12 @@ const ProductsList = () => {
     <>
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <header className="flex justify-between">
+          <header className="flex flex-wrap gap-8 justify-between">
             <p className="mt-4 max-w-md text-gray-800 text-lg font-semibold">
               Showing 112 Results
             </p>
 
-            <div className="flex items-center gap-8">
+            <div className="flex flex-wrap items-center gap-8">
               <span className="text-lg">Sort by:</span>
               <button
                 className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
@@ -61,31 +61,12 @@ const ProductsList = () => {
             </div>
           </header>
 
-          <div className="mt-8 block lg:hidden">
-            <button className="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600">
-              <span className="text-sm font-medium"> Filters & Sorting </span>
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-4 rtl:rotate-180"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </button>
-          </div>
-
           <div className="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
-            <FilterNav />
+            <div className="grid grid-cols-1 gap-4 mb-6 lg:mb-0">
+              <FilterNav />
+            </div>
 
-            <div className="lg:col-span-3">
+            <div className="md:col-span-3 w-full md:w-auto">
               <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {products.map((product) => (
                   <ProductList key={product.id} product={product} />
