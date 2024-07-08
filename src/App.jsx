@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-// import DefaultLayout from "./layouts/DefaultLayout";
+import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import ShopsPage from "./pages/ShopsPage";
 import CartPage from "./pages/CartPage";
@@ -15,12 +15,17 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
+          </Route>
+
+          <Route path="/products" element={<DefaultLayout />}>
             <Route path="products" element={<ShopsPage />} />
             <Route path="/products/:id" element={<ProductPage />} />
             <Route path="/products/checkout" element={<Checkout />} />
             <Route path="/products/cart/" element={<CartPage />} />
             <Route path="*" element={<NotFound />} />
-          </Route>
+         </Route>
+
+          
         </Routes>
       </BrowserRouter>
     </>
