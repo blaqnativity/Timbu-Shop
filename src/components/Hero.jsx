@@ -22,13 +22,16 @@ const Hero = () => {
               </Link>
             </div>
             <div className="hidden md:flex space-x-6">
-              <Link to="#" className="text-white hover:text-gray-300">
+              <Link
+                to="/collections"
+                className="text-white hover:text-gray-300"
+              >
                 Collections
               </Link>
-              <Link to="#" className="text-white hover:text-gray-300">
+              <Link to="/clearance" className="text-white hover:text-gray-300">
                 Clearance
               </Link>
-              <Link to="#" className="text-white hover:text-gray-300">
+              <Link to="/about" className="text-white hover:text-gray-300">
                 About
               </Link>
             </div>
