@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import DefaultLayout from "./layouts/DefaultLayout";
@@ -7,8 +8,33 @@ import CartPage from "./pages/CartPage";
 import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
+import Preloader from "/images/Preloader.png";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout to change the loading state after 5 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    // Clear the timeout if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        className="flex h-screen w-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${Preloader})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+    );
+  }
+
   return (
     <BrowserRouter>
       <Routes>

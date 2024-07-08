@@ -1,23 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import products from "../products.json";
 import ProductList from "../components/ProductList";
 import FilterNav from "../components/FilterNav";
 
 const ProductsList = () => {
+  const [activeButton, setActiveButton] = useState("Date");
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
+
+  const linkClass = (buttonName) =>
+    buttonName === activeButton
+      ? "bg-[#121211] text-white rounded-full px-3 py-2"
+      : "hover:text-gray-300";
+
   return (
     <>
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <header>
-            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-              Product Collection
-            </h2>
-
-            <p className="mt-4 max-w-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-              praesentium cumque iure dicta incidunt est ipsam, officia dolor
-              fugit natus?
+          <header className="flex justify-between">
+            <p className="mt-4 max-w-md text-gray-800 text-lg font-semibold">
+              Showing 112 Results
             </p>
+
+            <div className="flex items-center gap-8">
+              <span className="text-lg">Sort by:</span>
+              <button
+                className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
+                  "Date"
+                )}`}
+                onClick={() => handleButtonClick("Date")}
+              >
+                Date
+              </button>
+              <button
+                className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
+                  "Price"
+                )}`}
+                onClick={() => handleButtonClick("Price")}
+              >
+                Price
+              </button>
+              <button
+                className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
+                  "Relevance"
+                )}`}
+                onClick={() => handleButtonClick("Relevance")}
+              >
+                Relevance
+              </button>
+              <button
+                className={`py-2 px-5 rounded-full border-2 border-gray-800 ${linkClass(
+                  "Reset Filters"
+                )}`}
+                onClick={() => handleButtonClick("Reset Filters")}
+              >
+                Reset Filters
+              </button>
+            </div>
           </header>
 
           <div className="mt-8 block lg:hidden">
@@ -42,7 +83,6 @@ const ProductsList = () => {
           </div>
 
           <div className="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
-            {/* filter nav component goes here */}
             <FilterNav />
 
             <div className="lg:col-span-3">
