@@ -6,9 +6,9 @@ const NotFound = () => {
   return (
     <>
       <Navbar />
-      <div className="grid h-screen place-content-center bg-white px-4">
+      <div className="grid h-screen place-content-center bg-[#F3F2E8] px-4">
         <div className="text-center">
-          <h1 className="text-9xl font-black text-gray-200">404</h1>
+          <h1 className="text-9xl font-black text-[#121211]">404</h1>
 
           <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Uh-oh!
