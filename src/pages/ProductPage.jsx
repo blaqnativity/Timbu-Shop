@@ -5,7 +5,7 @@ const ProductPage = () => {
   return (
     <>
       <ProductCard />
-      <FeaturedProducts />
+      <FeaturedProducts title="Other products you might like" />
     </>
   );
 };

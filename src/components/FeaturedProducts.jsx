@@ -3,14 +3,16 @@ import ProductList from "./ProductList";
 import products from "../products.json";
 import { Link } from "react-router-dom";
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({
+  title = "Discover Unparalled Furniture Designs",
+}) => {
   const Favorites = products.slice(0, 3);
 
   return (
     <div className="max-w-7xl mx-auto my-20 p-4">
       <div className="flex justify-between items-start mb-5">
-        <h2 className="text-2xl md:text-3xl font-semibold w-1/3">
-          Discover Unparalled Furniture Designs
+        <h2 className="text-2xl md:text-3xl font-semibold sm:w-1/3 md:w-3/4">
+          {title}
         </h2>
         <Link
           to="/products"

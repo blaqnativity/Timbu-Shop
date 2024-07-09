@@ -19,7 +19,7 @@ const CheckoutCard = () => {
             <span className="text-md text-[#121211]">3. Finalize</span>
           </div>
         </div>
-        <div className="absolute top-[60px] rounded-full bg-gray-300 w-full left-5 h-1"></div>
+        {/* <div className="absolute top-[60px] rounded-full bg-gray-300 w-full left-5 h-1"></div> */}
 
         <form className="mt-10 py-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -50,7 +50,6 @@ const CheckoutCard = () => {
               Cart Summary
             </span>
           </div>
-          <div className="absolute top-[60px] rounded-full bg-gray-300 w-full left-5 h-1"></div>
         </div>
 
         <div className="mt-5">

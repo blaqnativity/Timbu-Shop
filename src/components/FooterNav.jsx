@@ -76,14 +76,14 @@ const FooterNav = () => {
                 type="email"
                 name="email"
                 aria-label="Email address"
-                className="text-sm text-gray-800 p-2 w-full mb-4"
+                className="text-sm outline focus:outline-[#F3F2E8] text-[#F3F2E8] px-5 py-2 w-full mb-4"
                 placeholder="Your email"
                 required
               />
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="bg-blue-600 text-white text-sm py-2 px-4 w-full"
+                className="rounded-full bg-[#F3F2E8] text-gray-800 text-sm py-2 px-4 w-full"
               >
                 Subscribe
               </button>
