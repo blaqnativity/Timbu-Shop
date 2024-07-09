@@ -54,13 +54,7 @@ const ProductCard = () => {
 
               <div className="colorPicker flex gap-2 items-center">
                 <span className="text-lg font-semibold">Qty:</span>
-                <button className="flex items-center gap-2 bg-gray-300 py-2 px-5 rounded-full border-2 border-gray-700">
-                  <span>1</span>
-                  <div>
-                    <FaAngleUp />
-                    <FaAngleDown />
-                  </div>
-                </button>
+                <input type="number" className="w-[100px] rounded-3xl" />
               </div>
 
               <div className="mt-2">

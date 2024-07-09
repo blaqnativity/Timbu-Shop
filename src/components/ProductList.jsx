@@ -11,7 +11,7 @@ const ProductList = ({ product }) => {
         <img
           src={product.imageUrl}
           alt={product.title}
-          className="md:h-[357px] rounded-xl md:w-[319px] object-cover transition duration-500 group-hover:scale-105"
+          className="md:h-[357px] rounded-xl md:w-full object-cover transition duration-500 group-hover:scale-105"
         />
 
         <div className="relative pt-3">
