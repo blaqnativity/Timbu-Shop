@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaXmark } from "react-icons/fa6";
+import { FaXmark, FaArrowRight } from "react-icons/fa6";
 
 const CartPage = () => {
   return (
@@ -64,9 +64,10 @@ const CartPage = () => {
 
           <Link
             to="/products/checkout"
-            className="text-center bg-[#121211] text-white p-4 rounded-full"
+            className="flex items-center justify-center text-center bg-[#121211] text-white p-4 rounded-full"
           >
-            Proceed to Checkout
+            <span>Proceed to Checkout</span>
+            <FaArrowRight />
           </Link>
         </div>
       </div>
