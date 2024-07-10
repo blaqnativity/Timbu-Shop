@@ -9,6 +9,7 @@ import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
 import Preloader from "/images/Preloader.png";
+import EmptyCart from "./pages/EmptyCart";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -48,6 +49,7 @@ const App = () => {
           <Route path=":id" element={<ProductPage />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="empty" element={<EmptyCart />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

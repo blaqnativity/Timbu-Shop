@@ -38,7 +38,10 @@ const Hero = () => {
           </div>
 
           <div className="hidden md:flex gap-6 items-center">
-            <Link to="/cart" className="text-white hover:text-gray-300">
+            <Link
+              to="/products/empty"
+              className="text-white hover:text-gray-300"
+            >
               <FaCartShopping />
             </Link>
             <Link to="#" className="text-white hover:text-gray-300">
@@ -78,7 +81,7 @@ const Hero = () => {
           <Link to="/about" className="text-white hover:text-gray-300">
             About
           </Link>
-          <Link to="/cart" className="text-white hover:text-gray-300">
+          <Link to="/products/empty" className="text-white hover:text-gray-300">
             <FaCartShopping />
           </Link>
         </div>

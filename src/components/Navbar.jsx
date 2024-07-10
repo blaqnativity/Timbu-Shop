@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex gap-6 items-center">
-          <NavLink to="/cart" className="hover:text-gray-300">
+          <NavLink to="/products/empty" className="hover:text-gray-300">
             <FaCartShopping />
           </NavLink>
           <NavLink to="/en" className="hover:text-gray-300">
@@ -79,7 +79,7 @@ const Navbar = () => {
           <NavLink to="/about" className="hover:text-gray-300">
             About
           </NavLink>
-          <NavLink to="/cart" className="hover:text-gray-300">
+          <NavLink to="/products/empty" className="hover:text-gray-300">
             <FaCartShopping />
           </NavLink>
         </div>

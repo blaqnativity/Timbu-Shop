@@ -5,8 +5,7 @@ import { FaXmark } from "react-icons/fa6";
 const CartPage = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="my-20 font-sans max-w-3xl rounded-3xl max-md:max-w-xl mx-auto bg-white p-8">
+      <div className="my-20 font-sans max-w-3xl rounded-3xl max-md:max-w-xl mx-auto bg-white bg-[#f3f2e8] border shadow p-8">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold text-gray-800 text-center">Cart</h1>
 
