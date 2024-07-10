@@ -69,13 +69,13 @@ const Hero = () => {
         } md:hidden absolute top-0 left-0 w-full bg-black bg-opacity-75 z-10`}
       >
         <div className="flex flex-col items-center space-y-6 py-6">
-          <Link to="#" className="text-white hover:text-gray-300">
+          <Link to="/collections" className="text-white hover:text-gray-300">
             Collections
           </Link>
-          <Link to="#" className="text-white hover:text-gray-300">
+          <Link to="/clearance" className="text-white hover:text-gray-300">
             Clearance
           </Link>
-          <Link to="#" className="text-white hover:text-gray-300">
+          <Link to="/about" className="text-white hover:text-gray-300">
             About
           </Link>
           <Link to="/cart" className="text-white hover:text-gray-300">
