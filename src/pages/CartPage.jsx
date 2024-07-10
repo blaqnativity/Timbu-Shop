@@ -5,7 +5,7 @@ import { FaXmark, FaArrowRight } from "react-icons/fa6";
 const CartPage = () => {
   return (
     <>
-      <div className="my-20 font-sans max-w-3xl rounded-3xl max-md:max-w-xl mx-auto bg-white bg-[#f3f2e8] border shadow p-8">
+      <div className="my-20 font-sans max-w-3xl rounded-3xl max-md:max-w-xl mx-auto bg-[#f3f2e8] border shadow p-8">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold text-gray-800 text-center">Cart</h1>
 
@@ -64,7 +64,7 @@ const CartPage = () => {
 
           <Link
             to="/products/checkout"
-            className="flex items-center justify-center text-center bg-[#121211] text-white p-4 rounded-full"
+            className="flex items-center gap-4 justify-center text-center bg-[#121211] text-white p-4 rounded-full"
           >
             <span>Proceed to Checkout</span>
             <FaArrowRight />
